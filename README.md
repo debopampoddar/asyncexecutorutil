@@ -62,9 +62,9 @@ ExecutionResult result = new TaskExecutor.Builder()
 You can handle the results of task execution using the `ExecutionResult` object. The `getResults` method returns a map of task names to results.
 
 ```
-Map<String, Object> results = result.getResults();
-System.out.println(results.get("task1")); // Task 1 completed
-System.out.println(results.get("task2")); // Task 2 completed
+ExecutionResult result = .....
+System.out.println(result.getResult("task1")); // Task 1 completed
+System.out.println(result.getException("task2")); // Task 2 Failed
 ```
 
 ### Handling Failures

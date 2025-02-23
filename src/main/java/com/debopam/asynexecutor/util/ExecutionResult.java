@@ -47,6 +47,4 @@ public record ExecutionResult(Map<String, Object> successes,
     public boolean isCompleteSuccess() {
         return failures.isEmpty();
     }
-
-
 }
